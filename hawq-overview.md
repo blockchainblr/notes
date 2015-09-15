@@ -54,6 +54,7 @@ Designed to support highest level of performance and scalibility.
 - `interconnect` refers to inter-process communication between the segments, as well as network infrastructure on which this communication relies.
 - Uses UDP to send messages over the network.
 - Additional packet verification is done by HAWQ platform, which equivalents the reliability of TCP but the performance and scalability exceeds that of TCP.
+    
     ### Interconnect Redundancy
     - By deploying dual Gigabit Ethernet switches on the network.
     - By deploying redundant Gigabit connection to hte HAWQ host(master and segment) servers.
