@@ -27,6 +27,11 @@ Designed to support highest level of performance and scalibility.
 - `global system catalog` resides in the master where the set of system tables that contain metadata about HAWQ system itself resides.
 - Responsible for authenticating client connections, processing incoming SQL commands, distributes workload among segments, corordinates the results returned by each segment and presents the final results to the client program.
 
+    ### Master Mirroring (redundancy and failover)
+    - Backup or mirror of the master instance on a seperate host from the master node can be deployed.
+    - This host serves as a *warm standby*
+    - standby master is kept up to date by a *transaction log replication process*
+
 ### HAWQ Segment
 - `segments` are units which process the individual data modules simultaneously.
 - These are stateless.
@@ -34,6 +39,12 @@ Designed to support highest level of performance and scalibility.
 - The metadata contains the HDFS url for the required table.
 - Segments access the corresponding data using the HDFS url from metadata.
 
+    ### Segment Failover
+    - The segments are stateless. This ensures fast recovery and better availability.
+    - Existing sessions during failover are automatically resigned to the remaining segments. 
+    - Segments state is always verified by Fault Tolerance service.
+    - All the sessions are automatically reconfigured to use the full computing power.
+  
 ### HAWQ Storage
 - Stores all table data, except the system tables, in HDFS.
 - The metadata for each user table is stored on the master's local file system and table content in HDFS.
@@ -43,3 +54,6 @@ Designed to support highest level of performance and scalibility.
 - `interconnect` refers to inter-process communication between the segments, as well as network infrastructure on which this communication relies.
 - Uses UDP to send messages over the network.
 - Additional packet verification is done by HAWQ platform, which equivalents the reliability of TCP but the performance and scalability exceeds that of TCP.
+    ### Interconnect Redundancy
+    - By deploying dual Gigabit Ethernet switches on the network.
+    - By deploying redundant Gigabit connection to hte HAWQ host(master and segment) servers.
