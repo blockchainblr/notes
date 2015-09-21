@@ -1,0 +1,2 @@
+## HAWQ Architecture
+
