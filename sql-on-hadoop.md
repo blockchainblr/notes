@@ -37,3 +37,17 @@
 * Federated queries, good query optimizer, etc.
 * This solution is similar to HAWQ as general idea.
 
+#### Spark SQL
+* Module for working with structured data.
+* Integrates SQL quries with Spark programs
+* Easy to connect to any data source for Uniform data access.
+* Full Hive Compatibility
+* Includes cost-based optimizer, columnar storage and code generation to make queries fast.
+ 
+#### Splice Machine
+* Provides the Hadoop RDBMS.
+* Supports standard ANSI SQL
+* Auto-sharding of HBase.
+* Real-time updates with Transactional Integrity.
+* Distributed Parallelized Query Execution
+* High Concurrency
