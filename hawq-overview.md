@@ -3,7 +3,14 @@ HAWQ is designed as a MPP SQL processing engine.
 Breaks complex queries into small tasks and distributes them to MPP Query processing units for execution.
 
 Designed to support highest level of performance and scalibility.
-  
+
+## Features of Hawq
+
+* 100% true ANSI SQL support
+* Parallel query processing
+* Mulit-petabyte horizontal scalability
+* Robust data management
+* Supports common Hadoop formats and deep analytics
 ## Components of HAWQ System.
 
 * HAWQ Master
