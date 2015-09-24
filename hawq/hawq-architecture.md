@@ -9,6 +9,10 @@ Pivotal HD Architecture comprises of
 *   
 
 
+
+
+
+
 ## HAWQ Architecture
 
 * HAWQ Master
@@ -67,3 +71,5 @@ Upstream to downsteream data transfer.
 * HAWQ Standby Master
 * NameNode
 * DataNode
+
+
