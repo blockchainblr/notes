@@ -22,6 +22,4 @@
 ### Security
 - **Kerberos**
 - **OpenLDAP**
-- **Active Directory**
-- **Apache 
 - **PowerBroker** 
