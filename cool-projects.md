@@ -16,3 +16,12 @@
 - **Apache Tez** is an effort to develop generic application framework which can be used to process arbitrarily complex directed-acyclic graphs(DAGs) of data-processing tasks and also re-usable set of data processing primitives which can be used by other projects.
 - **Apache Helix** is a cluster management framework for partitioned and replicated distributed resources.
 - **Apache Mesos** is a cluster manager that provides efficient resource isolation and sharing across distributed applications, or frameworks.
+- **Apache Sentry** is a system for enforcing fine grained role based authorization to data and metadata stored on a Hadoop Cluster
+
+
+### Security
+- **Kerberos**
+- **OpenLDAP**
+- **Active Directory**
+- **Apache 
+- **PowerBroker** 
