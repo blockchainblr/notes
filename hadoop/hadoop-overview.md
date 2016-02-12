@@ -5,3 +5,5 @@ Hadoop is very important because
 * Stores data in native format
 * Delivers linear scalability at low cost
 * Built in high availability through redundancy
+
+### Hadoop Core components
