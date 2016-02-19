@@ -43,3 +43,10 @@ Property: REQUEST_POOL=<pool-name>
 Usage: impala-shell> SET REQUEST_POOL=<poolname>;
 impala-shell> ## Impala statement
 ```
+
+
+## Kerberos
+#####Creating Keytabs using username and password - works in windows machine
+```
+$ ktab -a <principal@relm> [<password>] -k <keytab-location>
+```
