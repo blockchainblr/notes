@@ -21,7 +21,7 @@ $ hdfs dfs -tail [n] <filename>
 
 #### HDFS Set Quota
 ```
-$ hdfs dfs -setSpaceQuota <N>  <filename>
+$ hdfs dfsadmin -setSpaceQuota <N>  <filename>
 
 N is in bytes
 ```
