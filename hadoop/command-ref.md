@@ -19,6 +19,20 @@ $ hdfs dfs -tail [n] <filename>
 ```
 
 
+#### HDFS Set Quota
+```
+$ hdfs dfs -setfacl -setSpaceQuota <N>  <filename>
+```
+
+
+#### HDFS Get Quota
+```
+$ hadoop fs -count -q /path/to/directory
+  QUOTA  REMAINING_QUOTA     SPACE_QUOTA  REMAINING_SPACE_QUOTA    DIR_COUNT  FILE_COUNT      CONTENT_SIZE FILE_NAME
+   none              inf  54975581388800          5277747062870   
+```
+
+
 ## Submitting a job to specific pools in MR2
 #####Map Reduce
 ``` 
