@@ -66,3 +66,7 @@ impala-shell> ## Impala statement
 ```
 $ ktab -a <principal@relm> [<password>] -k <keytab-location>
 ```
+#####kinit using keytab
+```
+$ kinit -k -t <keytab-file> <principal@relm>
+```
