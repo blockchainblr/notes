@@ -96,3 +96,17 @@ hbase> revoke <user>
 ```
 hbase> user_name '<table>'
 ```
+
+## Sentry
+```
+beeline> CREATE ROLE hive_admin;
+beeline> GRANT ROLE hive_admin TO GROUP sqladmin;
+beeline> GRANT ALL ON SERVER server1;
+
+beeline> SHOW GRANT ROLE hive_admin;
+beeline> SHOW ROLE GRANT GROUP hive_admin;
+
+beeline> SHOW CURENT ROLE;
+beeline> SET ROLE NONE;
+```
+
