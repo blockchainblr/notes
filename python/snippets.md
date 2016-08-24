@@ -67,7 +67,12 @@ If..else
     else:
         statement
 ```
+for loop with enmurator or counter
+```
+for rowno, row in enmurate(rows, start=1):
+    print(rowno, row)
 
+```
 ### Formatted output
 ```
 name = 'IBM'
@@ -108,6 +113,7 @@ f.close()
 using with statement
 ```
 with open('file.txt','r') as f:
+    headers = next(f)       ## Skip a single of input
     data = f.read
 ```
 
@@ -129,12 +135,75 @@ b = "hello world"
 'world'
 >>> len(line)
 >>> c= a + b
->>> line.strip() ## cleans up the end characters
+>>> line.strip() ## strips the white space
 >>> line.strip('"')
 >>> line.replace('"', '-')
 >>> line.split(',') ## Splits into a list
 ```
+
+### CSV operations
+```
+import csv
+with open('file.csv', 'r') as f:
+    rows = csv.reader(f)
+
+for row in rows:
+    print(row)
+```
+
+### functions
+```
+def greeting(name):
+    '''
+    Issues a greeting with help. Also serves as a comment
+    '''
+    print('Hello ', name)
+    
+greeting('avinash')
+
+help(greeting)
+```
+```
+def add(x, y):
+    result = x + y
+    return result
+
+a = add(4,5)
+add(x=10, y=15)
+add(y=15, x=10)
+```
+def with default argument values. Called optional arguments
+```
+def add(x, y=10):
+    stmt1
+    stmt2
+
+add(10)
+add(10,20)
+```
+
+### Glob module example
+```
+import glob
+files = glob.glob('data/file*.csv')
+>>> files
+['data/file1.csv', 'data/file2.csv', 'data/file4.csv']
+```
+
+### Handling excpetions
+```
+    try:
+        statement1
+        statement2
+    except ValueError as err:
+        print('bad value')
+        print('Reason:', err)
+        statement
+        continue    ## skip executing following statements
+```
+
 ### Some modules
 1. pdb - python debugger
 2. sys - System specific paramaters and libraries
-2. csv - 
+2. csv - Moudle to read csv data
+3. glob - Unix style pathname pattern expansion
