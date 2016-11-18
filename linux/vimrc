@@ -1,4 +1,4 @@
-## My Basic VIM settings
+" My Basic VIM settings
 colorscheme desert
 set tabstop=4
 set softtabstop=4
