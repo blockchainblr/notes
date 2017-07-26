@@ -18,12 +18,12 @@ Linux System Administrator/DevOps Interview Questions
 
 ####[[⬆]](#toc) <a name='general'>General Questions:</a>
 
-* Talk about your preferred development/administration environment. (OS, Editor, Browsers, Tools etc.)
- * RHEL, VIM, Chrome, Docker, Jenkins, Scripting
+Talk about your preferred development/administration environment. (OS, Editor, Browsers, Tools etc.)
+> RHEL, VIM, Chrome, Docker, Jenkins, Scripting
 * Tell me about the biggest mistake you've made in [some recent time period] and how you would do it differently today. What did you learn from this experience?
 * Why we must choose you?
 * What function does DNS play on a network?
- * DNS is Domain Name Service protocol. It helps assign and refer to a machine using a friendly name.
+> DNS is Domain Name Service protocol. It helps assign and refer to a machine using a friendly name.
 * What is HTTP?
  * Hyper-Text-Transfer-Protocol. Web application protocol.
 * What is an HTTP proxy and how does it work?
