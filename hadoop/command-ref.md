@@ -66,3 +66,47 @@ impala-shell> ## Impala statement
 ```
 $ ktab -a <principal@relm> [<password>] -k <keytab-location>
 ```
+#####kinit using keytab
+```
+$ kinit -k -t <keytab-file> <principal@relm>
+```
+
+## HBase Commands
+```
+- Whenever using a namespace or group, prefix with '@' symbol.
+
+Permissions:
+R - read privilege.
+W - write privilege.
+X - execute privilege.
+C - create privilege.
+A - admin privilege.
+```
+#####Grant user/group permission to a namespace/table
+```
+hbase> grant <user> <permissions> [@<namespace> [<column family> [<column; qualifier>]]
+```
+
+##### Revoke Permission
+```
+hbase> revoke <user>
+```
+
+##### Check permission on a namespace/table
+```
+hbase> user_name '<table>'
+```
+
+## Sentry
+```
+beeline> CREATE ROLE hive_admin;
+beeline> GRANT ROLE hive_admin TO GROUP sqladmin;
+beeline> GRANT ALL ON SERVER server1;
+
+beeline> SHOW GRANT ROLE hive_admin;
+beeline> SHOW ROLE GRANT GROUP hive_admin;
+
+beeline> SHOW CURENT ROLE;
+beeline> SET ROLE NONE;
+```
+
